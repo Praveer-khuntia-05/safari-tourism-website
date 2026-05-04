@@ -1,7 +1,7 @@
 # Safari Tourism Website
 
 ## Live Demo
-https://your-username.github.io/safari-tourism-website/
+https://praveer-khuntia-05.github.io/safari-tourism-website/
 
 ## Features
 - Responsive design
