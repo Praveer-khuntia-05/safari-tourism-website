@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book African Safaris Tours & Experience</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="filter.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+   <!-- FULL-SCREEN MENU OVERLAY  -->
+  <div class="menu-overlay" id="menuOverlay">
+    <div class="menu-overlay-top">
+      <div class="menu-overlay-meta">
+        <span class="menu-lang">🇿🇦 English (USD-$) ▾</span>
+        <span class="menu-phone">📞 ZA Number: +27 21 469 2600 ▾</span>
+      </div>
+      <div class="menu-overlay-actions">
+        <button class="menu-search-btn"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg> Search</button>
+        <button class="menu-close-btn" id="menuClose"><span class="close-icon">✕</span> Close</button>
+      </div>
+    </div>
+
+    <div class="menu-overlay-body">
+      <div class="menu-col">
+        <h3 class="menu-col-title">WHO WE ARE</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Meet The Team</a></li>
+          <li><a href="#">Our Awards &amp; Recognitions</a></li>
+          <li><a href="#">Client Feedback</a></li>
+          <li><a href="#">Doing Good</a></li>
+          <li><a href="#">Sustainable Tourism</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="menu-col">
+        <h3 class="menu-col-title">BOOK WITH US</h3>
+        <ul>
+          <li><a href="#">Why Book With Us?</a></li>
+          <li><a href="#">What Are Tailor-Made Tours?</a></li>
+          <li><a href="#">Travel With Confidence</a></li>
+          <li><a href="#">Fully Refundable Deposit</a></li>
+          <li><a href="#">Travel Insurance</a></li>
+          <li><a href="#">Best Price Guarantee</a></li>
+          <li><a href="#">When To Travel To Africa?</a></li>
+        </ul>
+      </div>
+      <div class="menu-col menu-col-partners">
+        <h3 class="menu-col-title">IMPACT PARTNERS</h3>
+        <div class="partners-carousel">
+          <img src="img/hmbg.avif" alt="Impact Partner" class="partners-img" />
+          <div class="partners-nav">
+            <button class="partners-prev">&#10094;</button>
+            <div class="partners-dots">
+              <span class="pdot active"></span>
+              <span class="pdot"></span>
+              <span class="pdot"></span>
+              <span class="pdot"></span>
+              <span class="pdot"></span>
+              <span class="pdot"></span>
+            </div>
+            <button class="partners-next">&#10095;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-overlay-footer">
+      <div class="menu-footer-logo">
+        <svg class="menu-rhino-icon" viewBox="0 0 40 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M38,10 C37,6 34,4 30,4 L28,3 L26,1 L24,2 L22,1 L20,3 L16,3 C12,3 8,5 6,8 L4,8 C2,8 1,9 1,10 L2,12 L4,12 L4,14 L8,14 L8,12 L10,12 C10,14 12,16 14,16 L26,16 C28,16 30,14 30,12 L32,12 L32,14 L36,14 L36,12 L38,12 C39,11 39,10 38,10 Z"/>
+        </svg>
+        <span class="menu-logo-text">RHINOAFRICA<span class="logo-dot">.COM</span></span>
+      </div>
+      <div class="menu-footer-social">
+        <a href="#" class="social-icon">f</a>
+        <a href="#" class="social-icon">in</a>
+        <a href="#" class="social-icon">▶</a>
+        <a href="#" class="social-icon">li</a>
+      </div>
+      <div class="menu-footer-badge">
+        <div class="badge-icon">🏆</div>
+        <div>
+          <div class="badge-title">Africa's Most Awarded</div>
+          <div class="badge-sub">Safari Company</div>
+        </div>
+      </div>
+      <div class="menu-footer-trustpilot">
+        <div class="tp-label">Trustpilot</div>
+        <div class="tp-stars">★★★★★</div>
+        <div class="tp-score">TrustScore 5.0 · 5,369 reviews</div>
+      </div>
+    </div>
+  </div>
+
+   <!-- HEADER  -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-top-row">
+      <div class="header-left">
+        <button class="hamburger-btn" id="hamburgerBtn">
+          <span class="ham-icon">
+            <span></span><span></span><span></span>
+          </span>
+          <span class="ham-label">Menu</span>
+        </button>
+        <button class="search-btn" id="searchBtn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <span class="search-label">Search</span>
+        </button>
+      </div>
+
+      <div class="header-logo">
+        <a href="#" class="logo-link">
+          <svg class="rhino-icon" viewBox="0 0 40 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M38,10 C37,6 34,4 30,4 L28,3 L26,1 L24,2 L22,1 L20,3 L16,3 C12,3 8,5 6,8 L4,8 C2,8 1,9 1,10 L2,12 L4,12 L4,14 L8,14 L8,12 L10,12 C10,14 12,16 14,16 L26,16 C28,16 30,14 30,12 L32,12 L32,14 L36,14 L36,12 L38,12 C39,11 39,10 38,10 Z"/>
+          </svg>
+          <span class="logo-text-main">RHINOAFRICA<span class="logo-com">.COM</span></span>
+          <div>  <span class="logo-est">EST. 2004</span></div>
+        </a>
+      </div>
+
+      <div class="header-right">
+        <a href="#" class="cta-btn" id="ctaBtn">START PLANNING</a>
+      </div>
+    </div>
+
+    <nav class="header-nav">
+      <ul class="nav-list">
+        <li><a href="#" class="nav-link">DESTINATIONS</a></li>
+        <li><a href="#" class="nav-link">TOURS</a></li>
+        <li><a href="#" class="nav-link">SAFARI EXPERIENCES</a></li>
+        <li><a href="#" class="nav-link">WE RECOMMEND</a></li>
+        <li><a href="#" class="nav-link">BLOG</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--  HERO SLIDER  -->
+  <section class="hero-slider" id="heroSlider">
+
+    <!-- Slide 1 -->
+    <div class="slide active" id="slide1">
+      <div class="slide-bg" style="background-image: url('img/slide-1.avif')"></div>
+      <div class="slide-content">
+        <h1 class="slide-title">BESPOKE LUXURY<br>SAFARIS SINCE 2004</h1>
+        <p class="slide-sub">Experience Africa's finest with us</p>
+        <a href="#" class="slide-cta">START PLANNING</a>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide" id="slide2">
+      <div class="slide-bg" style="background-image: url('img/slide-2.avif')"></div>
+      <div class="slide-content">
+        <h1 class="slide-title">THE AUTHORITY ON<br>LUXURY AFRICAN TRAVEL</h1>
+        <p class="slide-sub">The World's Best Safari Company</p>
+        <a href="#" class="slide-cta">START PLANNING</a>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide" id="slide3">
+      <div class="slide-bg" style="background-image: url('img/slide-1.avif')"></div>
+      <div class="slide-content">
+        <h1 class="slide-title">EYEING A TAILOR-MADE<br>AFRICA SAFARI?</h1>
+        <p class="slide-sub">Over 300,000 delighted travellers and counting...</p>
+        <a href="#" class="slide-cta">START PLANNING</a>
+      </div>
+    </div>
+
+    <!-- Slider Controls -->
+    <div class="slider-arrows">
+      <button class="slider-arrow prev-arrow" id="heroPrev">&#8249;</button>
+      <button class="slider-arrow next-arrow" id="heroNext">&#8250;</button>
+    </div>
+  </section>
+
+ 
+
+  <!--  DISCOVER SECTION  -->
+  <section class="discover-section">
+    <div class="discover-header">
+      <h2 class="discover-title">Discover Africa with us</h2>
+      <h4 class="discover-sub">You're a step closer to your dream safari. Explore these tour ideas from our Africa travel experts and start planning your trip of a lifetime.</h4>
+    </div>
+
+    <div class="tours-carousel-wrapper">
+      <button class="tour-arrow tour-prev" id="tourPrev">&#8249;</button>
+
+      <div class="tours-track-container">
+        <div class="tours-track" id="toursTrack">
+
+          <!-- Planning Card (first) -->
+            <div class="tour-card inspiration-card">
+            <div class="inspo-avatars">
+              <img src="img/client-1.avif" alt="Expert" />
+              <img src="img/client-2.avif" alt="Expert" />
+              <img src="img/client-3.avif" alt="Expert" />
+            </div>
+            <h3 class="inspo-title">Tailor-made is our business.</h3>
+            <p class="inspo-text">Explore more of our Tailor-made Safari Tours curated by our Travel Experts.</p>
+            <a href="#" class="inspo-btn">Let's Start Planning</a>
+          </div>
+
+          <!-- Tour Card 1 -->
+
+          <div class="tour-card">
+            <div class="tour-card-bg" style="background-image: url('img/card-1.avif')"></div>
+            <div class="tour-card-info">
+              <div class="tour-card-top">
+                <h3 class="tour-name">Luxurious Safari and Beach Honeymoon Tour</h3>
+                <p class="tour-duration">13 Days in Mauritius, &amp; South Africa</p>
+              </div>
+              <div class="tour-card-bottom">
+                <a href="#" class="tour-explore-btn">EXPLORE</a>
+                <div class="tour-price">
+                  <span class="from-label">Starting from</span>
+                  <span class="price-amount">$7,993</span>
+                  <span class="per-person">Per Person Sharing</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tour Card 2 -->
+          <div class="tour-card">
+            <div class="tour-card-bg" style="background-image: url('img/card-2.avif')"></div>
+            <div class="tour-card-info">
+              <div class="tour-card-top">
+                <h3 class="tour-name">3 Day Kruger Park Safari</h3>
+                <p class="tour-duration">2 Days in South Africa</p>
+              </div>
+              <div class="tour-card-bottom">
+                <a href="#" class="tour-explore-btn">EXPLORE</a>
+                <div class="tour-price">
+                  <span class="from-label">Starting from</span>
+                  <span class="price-amount">$1,986</span>
+                  <span class="per-person">Per Person Sharing</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tour Card 3 -->
+          <div class="tour-card">
+            <div class="tour-card-bg" style="background-image: url('img/card-3.avif')"></div>
+            <div class="tour-card-info">
+              <div class="tour-card-top">
+                <h3 class="tour-name">African Legacy, Community and Wildlife Tour</h3>
+                <p class="tour-duration">9 Days in South Africa</p>
+              </div>
+              <div class="tour-card-bottom">
+                <a href="#" class="tour-explore-btn">EXPLORE</a>
+                <div class="tour-price">
+                  <span class="from-label">Starting from</span>
+                  <span class="price-amount">$9,583</span>
+                  <span class="per-person">Per Person Sharing</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tour Card 4 -->
+          <div class="tour-card">
+            <div class="tour-card-bg" style="background-image: url('img/card-4.avif')"></div>
+            <div class="tour-card-info">
+              <div class="tour-card-top">
+                <h3 class="tour-name">Tanzania Revealed: Sun, Savannah and Spice</h3>
+                <p class="tour-duration">10 Days in Tanzania</p>
+              </div>
+              <div class="tour-card-bottom">
+                <a href="#" class="tour-explore-btn">EXPLORE</a>
+                <div class="tour-price">
+                  <span class="from-label">Starting from</span>
+                  <span class="price-amount">$7,699</span>
+                  <span class="per-person">Per Person Sharing</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tour Card 5 -->
+          <div class="tour-card">
+            <div class="tour-card-bg" style="background-image: url('img/card-5.avif')"></div>
+            <div class="tour-card-info">
+              <div class="tour-card-top">
+                <h3 class="tour-name">Kenya &amp; Tanzania: The Great Migration</h3>
+                <p class="tour-duration">14 Days in Kenya &amp; Tanzania</p>
+              </div>
+              <div class="tour-card-bottom">
+                <a href="#" class="tour-explore-btn">EXPLORE</a>
+                <div class="tour-price">
+                  <span class="from-label">Starting from</span>
+                  <span class="price-amount">$11,200</span>
+                  <span class="per-person">Per Person Sharing</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Inspiration Card (last) -->
+          <div class="tour-card inspiration-card">
+            <div class="inspo-avatars">
+              <img src="img/client-1.avif" alt="Expert" />
+              <img src="img/client-2.avif" alt="Expert" />
+              <img src="img/client-3.avif" alt="Expert" />
+            </div>
+            <h3 class="inspo-title">Need more Inspiration?</h3>
+            <p class="inspo-text">Explore more of our Tailor-made Safari Tours curated by our Travel Experts.</p>
+            <a href="#" class="inspo-btn">VIEW ALL TOURS</a>
+          </div>
+
+        </div>
+      </div>
+
+      <button class="tour-arrow tour-next" id="tourNext">&#8250;</button>
+    </div>
+
+    <!-- Dots -->
+    <div class="tour-dots" id="tourDots">
+      <span class="tdot active" data-index="0"></span>
+      <span class="tdot" data-index="1"></span>
+      <span class="tdot" data-index="2"></span>
+      <span class="tdot" data-index="3"></span>
+      <span class="tdot" data-index="4"></span>
+      <span class="tdot" data-index="5"></span>
+    </div>
+
+    <div class="view-more-wrap">
+      <a href="#" class="view-more-btn">VIEW MORE TOURS</a>
+    </div>
+  </section>
+
+<!--  PAGE FILTER  -->
+  <section class="page-hero">
+  <h1 class="page-title" id="tourCount">77 Tour Ideas</h1>
+  <p class="page-sub">We tailor-make all our African safari tours. Let our itinerary ideas inspire your African journey.</p>
+</section>
+ 
+<!--  FILTER BAR (sticky)  -->
+<div class="filter-bar-wrap" id="filterBarWrap">
+  <div class="filter-bar" id="filterBar">
+ 
+    <!-- LEFT: Filter controls -->
+    <div class="filter-left">
+      <span class="filter-label">Filter by:</span>
+ 
+      <!-- Destinations Dropdown -->
+      <div class="flt-dropdown" id="fltDestinations">
+        <button class="flt-pill" id="btnDestinations" aria-expanded="false">
+          <span class="pill-text" id="destLabel">Destinations</span>
+          <svg class="pill-arrow" viewBox="0 0 20 20" fill="currentColor"><path d="M5 7l5 5 5-5"/></svg>
+        </button>
+        <div class="flt-panel" id="panelDestinations">
+          <div class="panel-search">
+            <input type="text" class="panel-input" id="destSearch" placeholder="Destinations" />
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <div class="panel-section-title">Top destinations</div>
+          <ul class="dest-list" id="destList">
+            <li class="dest-item" data-dest="cape-town">Cape Town</li>
+            <li class="dest-item" data-dest="cape-winelands">Cape Winelands</li>
+            <li class="dest-item" data-dest="chobe">Chobe Region</li>
+            <li class="dest-item" data-dest="kruger">Kruger National Park</li>
+            <li class="dest-item" data-dest="maasai-mara">Maasai Mara National Reserve</li>
+            <li class="dest-item" data-dest="moremi">Moremi and Okavango Region</li>
+            <li class="dest-item" data-dest="ngorongoro">Ngorongoro Crater</li>
+            <li class="dest-item" data-dest="nosy-be">Nosy Be</li>
+            <li class="dest-item" data-dest="okavango">Okavango Delta</li>
+            <li class="dest-item" data-dest="serengeti">Serengeti</li>
+            <li class="dest-item" data-dest="victoria-falls">Victoria Falls</li>
+            <li class="dest-item" data-dest="zanzibar">Zanzibar</li>
+          </ul>
+        </div>
+      </div>
+ 
+      <!-- Trip Duration Dropdown -->
+      <div class="flt-dropdown" id="fltDuration">
+        <button class="flt-pill" id="btnDuration" aria-expanded="false">
+          <span class="pill-text" id="durLabel">Trip duration</span>
+          <svg class="pill-arrow" viewBox="0 0 20 20" fill="currentColor"><path d="M5 7l5 5 5-5"/></svg>
+        </button>
+        <div class="flt-panel" id="panelDuration">
+          <ul class="dur-list">
+            <li class="dur-item active" data-dur="all" data-label="Trip duration">Show all</li>
+            <li class="dur-item" data-dur="3-5" data-label="Short break">Short break <span class="dur-nights">(3–5 nights)</span></li>
+            <li class="dur-item" data-dur="6-9" data-label="Medium">Medium <span class="dur-nights">(6–9 nights)</span></li>
+            <li class="dur-item" data-dur="10-14" data-label="Long">Long <span class="dur-nights">(10–14 nights)</span></li>
+            <li class="dur-item" data-dur="15+" data-label="Extended">Extended <span class="dur-nights">(15+ nights)</span></li>
+          </ul>
+        </div>
+      </div>
+ 
+      <!-- Price Dropdown -->
+      <div class="flt-dropdown" id="fltPrice">
+        <button class="flt-pill" id="btnPrice" aria-expanded="false">
+          <span class="pill-text" id="priceLabel">Price</span>
+          <svg class="pill-arrow" viewBox="0 0 20 20" fill="currentColor"><path d="M5 7l5 5 5-5"/></svg>
+        </button>
+        <div class="flt-panel price-panel" id="panelPrice">
+          <div class="price-range-display">
+            <span class="price-badge" id="priceMinBadge">$666</span>
+            <span class="price-badge" id="priceMaxBadge">$35,397</span>
+          </div>
+          <div class="range-slider-wrap">
+            <div class="range-track" id="rangeTrack">
+              <div class="range-fill" id="rangeFill"></div>
+            </div>
+            <input type="range" class="range-thumb" id="rangeMin" min="666" max="35397" value="666" step="100" />
+            <input type="range" class="range-thumb" id="rangeMax" min="666" max="35397" value="35397" step="100" />
+          </div>
+          <button class="price-apply-btn" id="priceApply">APPLY</button>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="filter-divider"></div>
+ 
+    <!-- RIGHT: Sort controls -->
+    <div class="filter-right">
+      <span class="filter-label">Sort by:</span>
+ 
+      <!-- Sort Dropdown -->
+      <div class="flt-dropdown" id="fltSort">
+        <button class="flt-pill flt-pill--dark" id="btnSort" aria-expanded="false">
+          <span class="pill-text" id="sortLabel">Most popular</span>
+          <svg class="pill-arrow" viewBox="0 0 20 20" fill="currentColor"><path d="M5 7l5 5 5-5"/></svg>
+        </button>
+        <div class="flt-panel sort-panel" id="panelSort">
+          <ul class="sort-list">
+            <li class="sort-item active" data-sort="popular">Most popular</li>
+            <li class="sort-item" data-sort="price-asc">Price low to high</li>
+            <li class="sort-item" data-sort="price-desc">Price high to low</li>
+          </ul>
+        </div>
+      </div>
+ 
+      <!-- Clear -->
+      <button class="clear-btn" id="clearBtn">
+        <svg class="clear-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+        Clear
+      </button>
+    </div>
+ 
+  </div>
+</div>
+ 
+<!-- Active filter tags row -->
+<div class="active-filters-row" id="activeFiltersRow"></div>
+ 
+<!--  LOADING SPINNER  -->
+<div class="spinner-wrap" id="spinnerWrap">
+  <div class="spinner"></div>
+</div>
+ 
+<!--  CARDS GRID  -->
+<section class="cards-section">
+  <div class="cards-grid" id="cardsGrid">
+    <!-- Cards showing by JS -->
+  </div>
+ 
+  <!-- Empty state -->
+  <div class="empty-state" id="emptyState" style="display:none;">
+    <p>No tours match your current filters. <button class="link-btn" id="emptyReset">Clear all filters</button></p>
+  </div>
+</section>
+ 
+<!--  PAGINATION  -->
+<div class="pagination-wrap" id="paginationWrap">
+  <button class="pg-btn pg-prev" id="pgPrev">&#8249;</button>
+  <div class="pg-numbers" id="pgNumbers"></div>
+  <button class="pg-btn pg-next" id="pgNext">&#8250;</button>
+</div>
+
+  <script src="script.js"></script>
+  <script src="filter.js"></script>
+</body>
+</html>
